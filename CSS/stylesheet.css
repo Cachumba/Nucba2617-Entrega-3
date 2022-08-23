@@ -1,0 +1,197 @@
+
+:root {
+   /*Background*/
+   --Letras:#EDF2F4;
+   --Background-primario: #2B2D42;
+   --Background-secundario: #8D99AE; 
+   --detalle-primario: #EF233C;
+   /*Gradiente con  colores : #000428 y colores #004e92 probar.*/
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+/*NAV BAR*/
+
+  body {
+    background: var(--Background-secundario);
+  }
+  
+  header {
+    background: var(--Background-primario);
+    width: 100%;
+    clear: both;
+    content:'';
+    display: flex;
+  }
+  
+  .menu {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  nav img {
+    width: 100px;
+    float: left;
+    padding: 8px;
+  
+  }
+  
+  nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    font-family: 'Varela Round', sans-serif;
+  }
+  
+  nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:var(--Letras);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  nav ul li a::before {
+    display: flex;
+    content: '';
+    width: 0%;
+    height: 5px;
+    top:0;
+    position: relative;
+    transition: width 0.2s;
+  }
+  
+  nav ul li a:hover::before {
+    width: 100%;
+    background: var(--detalle-primario);
+  }
+
+  /*Slogan y Articulos*/
+
+
+  h1 {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .titulo p {
+    
+    margin: 20px 0px 0px 0px;
+  }
+
+  p {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+  }
+
+  .Gif img{
+    width: 200px;
+    height: 200px;
+    border: 5px double var(--detalle-primario);
+
+  }
+
+  .Gif {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+
+  h2 {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: var(--Background-primario);
+  }
+
+  section article img {
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px double var(--detalle-primario);
+
+  }
+
+  section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  section article p {
+    display: flex;
+    justify-content: center;
+    margin: 20px 30px 20px 0px;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: white;
+    background-color: var(--Background-primario);
+  }
+
+  .torneo img {
+
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+  }
+
+  .Sponsor img {
+    margin-top: 25px;
+    width: 100px;
+    height: 100px;
+    border: 5px double var(--detalle-primario);
+
+  }
+
+  footer {
+    background-color: var(--Background-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+  }
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color: white;
+  }
