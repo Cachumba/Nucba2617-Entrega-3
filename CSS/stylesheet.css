@@ -1,197 +1,275 @@
-
 :root {
-   /*Background*/
-   --Letras:#EDF2F4;
-   --Background-primario: #2B2D42;
-   --Background-secundario: #8D99AE; 
-   --detalle-primario: #EF233C;
-   /*Gradiente con  colores : #000428 y colores #004e92 probar.*/
+  /*Background*/
+  --Letras: #edf2f4;
+  --Background-primario: #2b2d42;
+  --Background-secundario: #8d99ae;
+  --boton: #2fb4cc;
+  --detalle-primario: #23ef7f;
 }
 
 
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
+}
+
 /*NAV BAR*/
 
-  body {
-    background: var(--Background-secundario);
-  }
-  
-  header {
-    background: var(--Background-primario);
-    width: 100%;
-    clear: both;
-    content:'';
-    display: flex;
-  }
-  
-  .menu {
-    width: 900px;
-    margin: 0 auto;
-  }
-  
-  nav img {
-    width: 100px;
-    float: left;
-    padding: 8px;
-  
-  }
-  
-  nav {
-    float: right;
-    display: flex;
-    align-items: center;
-    font-family: 'Varela Round', sans-serif;
-  }
-  
-  nav ul li {
-    list-style: none;
-    margin-left: 75px;
-    padding: 12px 0;
-    float: left;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color:var(--Letras);
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  nav ul li a::before {
-    display: flex;
-    content: '';
-    width: 0%;
-    height: 5px;
-    top:0;
-    position: relative;
-    transition: width 0.2s;
-  }
-  
-  nav ul li a:hover::before {
-    width: 100%;
-    background: var(--detalle-primario);
-  }
+body {
+  background-image: url("../Imagenes/Fondo.jpg");
+}
 
-  /*Slogan y Articulos*/
+header {
+  background: var(--Background-primario);
+  width: 100%;
+  clear: both;
+  content: "";
+  display: flex;
+}
 
+.menu {
+  width: auto;
+  margin: 0 auto;
+}
 
-  h1 {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
+.menu img {
+  width: 100px;
+  float: left;
+}
 
-  .titulo p {
-    
-    margin: 20px 0px 0px 0px;
-  }
+nav {
+  float: right;
+  display: flex;
+  align-items: center;
+  font-family: "Varela Round", sans-serif;
+}
 
-  p {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-  }
+nav ul li {
+  list-style: none;
+  margin-left: 75px;
+  padding: 12px 0;
+  float: left;
+  position: relative;
+}
 
-  .Gif img{
-    width: 200px;
-    height: 200px;
-    border: 5px double var(--detalle-primario);
+nav ul li a {
+  text-decoration: none;
+  color: var(--Letras);
+  font-weight: bold;
+  font-size: 20px;
+}
 
-  }
+nav ul li a::before {
+  display: flex;
+  content: "";
+  width: 0%;
+  height: 5px;
+  top: 0;
+  position: relative;
+  transition: width 0.2s;
+}
 
-  .Gif {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-top: 30px;
-  }
+nav ul li a:hover::before {
+  width: 100%;
+  background: var(--detalle-primario);
+}
 
-  h2 {
-    color: white;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 38px;
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    background-color: var(--Background-primario);
-  }
+/*Slogan y Articulos*/
 
-  section article img {
-    margin-top: 20px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px double var(--detalle-primario);
+h1 {
+  color: var(--Letras);
+  font-family: "Varela Round", sans-serif;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
-  }
+.titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  section article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.titulo img {
+  width: 500px;
+  margin-top: 50px;
+}
 
-  }
+.titulo p {
+  display: flex;
+  width: 500px;
+  margin: 20px 0px 0px 0px;
+}
 
-  section article p {
-    display: flex;
-    justify-content: center;
-    margin: 20px 30px 20px 0px;
-  }
+p {
+  color: var(--Letras);
+  font-family: "Varela Round", sans-serif;
+  width: 500px;
+  line-height: 1.8;
+  font-size: 20px;
+}
 
-  h3 {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
-    color: white;
-    background-color: var(--Background-primario);
-  }
+.Gif img {
+  width: 200px;
+  height: 200px;
+  border: 5px double var(--detalle-primario);
+}
 
-  .torneo img {
+.Gif {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
 
-    width: 700px;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 10px;
+h2 {
+  color:var(--Letras);
+  font-family: "Varela Round", sans-serif;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  background-color: var(--Background-primario);
+}
 
-  }
+section article img {
+  margin-top: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px double var(--detalle-primario);
+}
 
-  .Sponsor img {
-    margin-top: 25px;
-    width: 100px;
-    height: 100px;
-    border: 5px double var(--detalle-primario);
+section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  }
+section article p {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px 20px 0px;
+}
 
-  footer {
-    background-color: var(--Background-primario);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  color: var(--Letras);
+  background-color: var(--Background-primario);
+}
 
-  }
+.torneo img {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
 
-  h4 {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
-    color: white;
-  }
+.Sponsor img {
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+  border: 5px double var(--detalle-primario);
+}
+
+footer {
+  background-color: var(--Background-primario);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+  color:var(--Letras);
+}
+
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:var(--Letras);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color:var(--Letras);
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	width: 300px;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color:var(--boton);
+	border: 1px solid var(--boton);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: var(--boton);
+	color:var(--Letras);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*Fin-Cards*/
